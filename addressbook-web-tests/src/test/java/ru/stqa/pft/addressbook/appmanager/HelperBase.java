@@ -14,6 +14,10 @@ public class HelperBase {
         this.wd = wd;
     }
 
+    protected void accept() {
+        wd.switchTo().alert().accept();
+    }
+
     protected void click(By locator) {
         wd.findElement(locator).click();
     }
